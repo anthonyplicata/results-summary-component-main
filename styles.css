@@ -18,6 +18,13 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -37,8 +44,7 @@ body {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     height: auto;
     z-index: 1;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 25px;
 }
 
 #right {
@@ -48,6 +54,8 @@ body {
     height: auto;
     box-shadow: 0px 0.5px 15px rgb(203, 206, 208);
     z-index: 0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 /* TEXT STYLES LEFT*/
@@ -198,6 +206,7 @@ svg {
         margin-bottom: 0;
         background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
         height: auto;
+        max-width: 350px;
         z-index: 1;
         border-radius: 25px;
     }
@@ -207,6 +216,7 @@ svg {
         justify-content: center;
         background-color: white;
         height: auto;
+        max-width: 350px;
         box-shadow: 0px 0.5px 15px rgb(203, 206, 208);
         z-index: 0;
         border-top-right-radius: 24px;
